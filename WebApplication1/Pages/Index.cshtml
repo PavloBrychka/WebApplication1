@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Random r = new Random();
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+     <h1>Hello World</h1>
+     <p>Task1 Date: @DateTime.Now.Day.ToString()</p>
+     <p>Rand Task2: @Convert.ToChar(r.Next(0,100))</p>
+
+
+</div>
